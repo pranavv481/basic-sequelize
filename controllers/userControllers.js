@@ -163,10 +163,24 @@ const finderData = async(req, res)=>{
 }
 
 
+const setterGetter = async(req, res)=>{
+    // set
+  //  let data = await Users.create({name:'mahesh', email:'mahesh@gmail.com', gender:'male'})
+
+  // get
+  let data = await Users.findAll({})
+    let response = {
+        data: data
+    }
+    res.status(200).json(response)
+}
+
+
 
 module.exports = {
     addUser,
     crudOperation,
     queryData,
-    finderData
+    finderData,
+    setterGetter
 }

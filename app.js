@@ -8,6 +8,7 @@ app.get("/add", userCtrl.addUser);
 app.get("/crud", userCtrl.crudOperation);
 app.get("/query", userCtrl.queryData);
 app.get("/finder", userCtrl.finderData);
+app.get("/setter-getter", userCtrl.setterGetter);
 
 app.listen(port, ()=>{
     console.log(`server start at ${port}`)
