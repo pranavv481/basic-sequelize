@@ -6,6 +6,7 @@ const userCtrl = require("./controllers/userControllers");
 
 app.get("/add", userCtrl.addUser);
 app.get("/crud", userCtrl.crudOperation);
+app.get("/query", userCtrl.queryData);
 
 app.listen(port, ()=>{
     console.log(`server start at ${port}`)
